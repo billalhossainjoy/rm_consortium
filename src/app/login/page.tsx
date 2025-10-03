@@ -3,6 +3,7 @@
 import {useLogin} from "@refinedev/core";
 import {Card, CardContent} from "@components/ui/card";
 import {Button} from "@components/ui/button";
+import Image from "next/image";
 
 export default function Login() {
   const { mutate: login } = useLogin();
@@ -18,10 +19,12 @@ export default function Login() {
                       className="w-full flex items-center justify-center gap-2 rounded-xl py-2 hover:bg-primary hover:text-white"
                       variant="outline"
                   >
-                      <img
+                      <Image
                           alt="Google"
                           src="/google.png"
                           className="h-5 w-5"
+                          width={20}
+                          height={20}
                       />
                       Sign in with Google
                   </Button>

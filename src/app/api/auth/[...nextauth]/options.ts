@@ -10,7 +10,7 @@ const authOptions = {
     }),
   ],
     callbacks: {
-      async signIn({user}) {
+      async signIn({user}: {user: any}) {
           console.log(user)
           const adminEmail =process.env.ADMIN_EMAIL;
 
@@ -21,7 +21,7 @@ const authOptions = {
       return false;
       },
 
-      async redirect({ _, baseUrl}){
+      async redirect({ _, baseUrl}: {_: any, baseUrl: string}) {
           return `${baseUrl}/admin`;
       }
     },
