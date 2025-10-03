@@ -1,34 +1,36 @@
 import GoogleProvider from "next-auth/providers/google";
+import NextAuth from "next-auth/src";
 
-const authOptions = {
-  // Configure one or more authentication providers
-  providers: [
-    // !!! Should be stored in .env file.
-    GoogleProvider({
-      clientId: process.env.CLIENT_ID!,
-      clientSecret: process.env.CLIENT_SECRET!,
-    }),
-  ],
+
+const authOptions = NextAuth({
+    // Configure one or more authentication providers
+    providers: [
+        // !!! Should be stored in .env file.
+        GoogleProvider({
+            clientId: process.env.CLIENT_ID!,
+            clientSecret: process.env.CLIENT_SECRET!,
+        }),
+    ],
     callbacks: {
-      async signIn({user}: {user: any}) {
-          console.log(user)
-          const adminEmail =process.env.ADMIN_EMAIL;
+        async signIn({user}) {
+            console.log(user)
+            const adminEmail =process.env.ADMIN_EMAIL;
 
-      if (user?.email === adminEmail) {
-        return true; // allow login
-      }
+            if (user?.email === adminEmail) {
+                return true; // allow login
+            }
 
-      return false;
-      },
+            return false;
+        },
 
-      async redirect({ _, baseUrl}: {_: any, baseUrl: string}) {
-          return `${baseUrl}/admin`;
-      }
+        async redirect({ url, baseUrl}) {
+            return `${baseUrl}/admin`;
+        }
     },
     pages: {
-      error: "/"
+        error: "/"
     },
-  secret: `UItTuD1HcGXIj8ZfHUswhYdNd40Lc325R8VlxQPUoR0=`,
-};
+    secret: `UItTuD1HcGXIj8ZfHUswhYdNd40Lc325R8VlxQPUoR0=`,
+})
 
 export default authOptions;
