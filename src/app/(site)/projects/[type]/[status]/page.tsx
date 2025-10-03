@@ -48,7 +48,7 @@ export default function CommercialCompletedPage() {
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Discover our successfully delivered commercial developments that demonstrate our expertise in large-scale
-              façade solutions and architectural innovation.
+              facade solutions and architectural innovation.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">

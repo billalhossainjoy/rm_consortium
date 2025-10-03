@@ -3,7 +3,7 @@
 import React from 'react';
 import AddProject from "@components/addProject";
 import {useParams} from "next/navigation";
-import {useCustom, useCustomMutation} from "@refinedev/core";
+import {useCustom} from "@refinedev/core";
 import {UpdateProjectInput} from "@validation/schema";
 
 

@@ -10,12 +10,12 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="font-space-grotesk font-bold text-4xl lg:text-6xl text-foreground leading-tight">
-                Architectural Excellence in <span className="text-primary">Façade Solutions</span>
+                Architectural Excellence in <span className="text-primary">Facade Solutions</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Since 2008, RM Consortium Limited has been Bangladesh
                   &apos;s premier architectural firm, specializing in
-                innovative façade, glass, and cladding solutions for commercial projects.
+                innovative facade, glass, and cladding solutions for commercial projects.
               </p>
             </div>
 

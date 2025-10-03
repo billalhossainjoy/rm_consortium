@@ -21,7 +21,7 @@ export default function ProductsServicesPage() {
     },
     {
       icon: <Building2 className="h-8 w-8" />,
-      title: "Façade Works",
+      title: "facade Works",
       description: "Engineering sophisticated building envelopes with precision",
       items: [
         "Curtain Wall Systems (Stick, Semi-Unitized, Unitized)",
@@ -50,7 +50,7 @@ export default function ProductsServicesPage() {
     },
     {
       icon: <Users className="h-8 w-8" />,
-      title: "Façade Engineering & Consultancy",
+      title: "facade Engineering & Consultancy",
       description:
         "Providing expert guidance to ensure your design is efficient, durable, and aesthetically exceptional",
       items: [],
@@ -64,7 +64,7 @@ export default function ProductsServicesPage() {
         <div className="container mx-auto max-w-6xl text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-sans">Our Products & Services</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Comprehensive architectural solutions from concept to completion, delivering excellence in façade
+            Comprehensive architectural solutions from concept to completion, delivering excellence in facade
             engineering, glass processing, and building envelope systems.
           </p>
         </div>

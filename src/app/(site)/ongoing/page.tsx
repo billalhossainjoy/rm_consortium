@@ -38,7 +38,7 @@ export default function CommercialOngoingPage() {
               Ongoing Commercial Projects
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Explore our current commercial developments featuring innovative façade solutions and cutting-edge
+              Explore our current commercial developments featuring innovative facade solutions and cutting-edge
               architectural glass systems.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">

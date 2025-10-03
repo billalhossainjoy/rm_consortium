@@ -1,16 +1,11 @@
 "use client"
 
-import React, {Fragment} from 'react';
+import React from 'react';
 import {Button} from "@components/ui/button";
 import Link from "next/link";
 import {PlusIcon} from "lucide-react";
-import {useCustomMutation, useDelete, useList} from "@refinedev/core";
-import {useTable} from "@refinedev/react-table";
-import {ColumnType, projectColumns} from "@app/admin/projects/columns";
-import {flexRender} from "@tanstack/react-table";
+import {useList} from "@refinedev/core";
 import {Card, CardAction, CardContent, CardFooter, CardHeader, CardTitle} from "@components/ui/card";
-import {ApiClient} from "@providers/data-provider";
-import {UseCustomMutationOptions} from "@refinedev/core/src/hooks/data/useCustomMutation";
 import DeleteActions from "@app/admin/projects/DeleteActions";
 import {useRouter} from "next/navigation";
 

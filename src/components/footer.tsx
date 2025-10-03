@@ -14,7 +14,7 @@ export function Footer() {
               <span className="font-space-grotesk font-bold text-xl">RM Consortium</span>
             </div>
             <p className="text-sm text-background/80">
-              Leading architectural firm specializing in façade, glass, and cladding solutions since 2008.
+              Leading architectural firm specializing in facade, glass, and cladding solutions since 2008.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/services" className="hover:text-background transition-colors">
-                  Façade Works
+                  facade Works
                 </Link>
               </li>
               <li>
@@ -74,11 +74,11 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@rmconsortium.com</span>
+                <span>info.rmconsortium@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>Dhaka, Bangladesh</span>
+                <span>100 Feet Road, Madani Avenue, Notun Bazar, Vatara, Dhaka-1212, Bangladesh.</span>
               </div>
             </div>
           </div>

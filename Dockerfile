@@ -1,43 +1,34 @@
-FROM refinedev/node:18 AS base
+# Step 1: Use an official Node.js image as the base image
+FROM node:18-alpine as build
 
-FROM base AS deps
+# Step 2: Set the working directory inside the container
+WORKDIR /app
 
-RUN apk add --no-cache libc6-compat
+# Step 3: Install pnpm globally
+RUN npm install -g pnpm
 
-COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* .npmrc* ./
+# Step 4: Copy the package.json and pnpm-lock.yaml files into the container
+COPY package.json pnpm-lock.yaml ./
 
-RUN \
-  if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
-  elif [ -f package-lock.json ]; then npm ci; \
-  elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile; \
-  else echo "Lockfile not found." && exit 1; \
-  fi
+# Step 5: Install dependencies using pnpm
 
-FROM base AS builder
 
-COPY --from=deps /app/refine/node_modules ./node_modules
-
+# Step 6: Copy the rest of the application code into the container
 COPY . .
 
-RUN npm run build
+RUN pnpm install
 
-FROM base AS runner
+# Step 7: Build the Next.js app
+RUN pnpm build
 
-ENV NODE_ENV production
+# Step 8: Run Prisma migrations (optional, if you have Prisma setup)
+RUN pnpm prisma migrate deploy
 
-COPY --from=builder /app/refine/public ./public
-
-RUN mkdir .next
-RUN chown refine:nodejs .next
-
-COPY --from=builder --chown=refine:nodejs /app/refine/.next/standalone ./
-COPY --from=builder --chown=refine:nodejs /app/refine/.next/static ./.next/static
-
-USER refine
-
+# Step 9: Expose the port that Next.js will run on
 EXPOSE 3000
 
-ENV PORT 3000
-ENV HOSTNAME "0.0.0.0"
+# Step 10: Set the environment variables for production
+ENV NODE_ENV=production
 
-CMD ["node", "server.js"]
+# Step 11: Start the Next.js application
+CMD ["pnpm", "start"]

@@ -10,8 +10,8 @@ export function ServicesSection() {
     },
     {
       icon: Layers,
-      title: "Façade Works",
-      description: "Complete façade solutions including design, engineering, and installation services.",
+      title: "facade Works",
+      description: "Complete facade solutions including design, engineering, and installation services.",
     },
     {
       icon: Wrench,
@@ -31,7 +31,7 @@ export function ServicesSection() {
     {
       icon: Users,
       title: "Consultancy Services",
-      description: "Expert architectural consultancy for complex façade and structural projects.",
+      description: "Expert architectural consultancy for complex facade and structural projects.",
     },
   ]
 

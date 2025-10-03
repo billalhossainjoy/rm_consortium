@@ -20,7 +20,7 @@ export default function AboutPage() {
       year: "2018",
       title: "RM Consortium Limited (RMC)",
       description:
-        "Focused exclusively on complex façade projects including curtain walls, aluminum doors and windows, and ACP cladding solutions.",
+        "Focused exclusively on complex facade projects including curtain walls, aluminum doors and windows, and ACP cladding solutions.",
     },
     {
       year: "2021",
@@ -34,7 +34,7 @@ export default function AboutPage() {
     {
       icon: Building2,
       title: "Integrated Solutions",
-      description: "Complete façade and glass solution pipeline from a single, trusted source.",
+      description: "Complete facade and glass solution pipeline from a single, trusted source.",
     },
     {
       icon: Award,
@@ -60,7 +60,7 @@ export default function AboutPage() {
                 Pioneering Architectural Excellence <span className="text-primary">Since 2008</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                We deliver world-class façade, glass, and cladding solutions — all under one roof.
+                We deliver world-class facade, glass, and cladding solutions — all under one roof.
               </p>
             </div>
 
@@ -99,7 +99,7 @@ export default function AboutPage() {
 
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                At RM Consortium Limited (RMC), we don&apos;t just build façades — we craft iconic structures that inspire
+                At RM Consortium Limited (RMC), we don&apos;t just build facades — we craft iconic structures that inspire
                 confidence and stand the test of time. Our story is one of strategic evolution, driven by an unwavering
                 commitment to quality, innovation, and the ambition to provide truly integrated architectural solutions
                 in Bangladesh.
@@ -116,7 +116,7 @@ export default function AboutPage() {
             <div className="text-center space-y-4 mb-16">
               <h2 className="font-space-grotesk font-bold text-3xl lg:text-4xl text-foreground">Our Journey</h2>
               <p className="text-lg text-muted-foreground">
-                Four strategic milestones that shaped our evolution into Bangladesh&apos;s premier façade solutions provider.
+                Four strategic milestones that shaped our evolution into Bangladesh&apos;s premier facade solutions provider.
               </p>
             </div>
 
