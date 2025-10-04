@@ -11,7 +11,7 @@ export function ServicesSection() {
     {
       icon: Layers,
       title: "facade Works",
-      description: "Complete facade solutions including design, engineering, and installation services.",
+      description: "Complete facade solutions including design, engineering and installation services.",
     },
     {
       icon: Wrench,

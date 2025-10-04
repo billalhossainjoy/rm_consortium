@@ -52,7 +52,7 @@ export default function ProductsServicesPage() {
       icon: <Users className="h-8 w-8" />,
       title: "facade Engineering & Consultancy",
       description:
-        "Providing expert guidance to ensure your design is efficient, durable, and aesthetically exceptional",
+        "Providing expert guidance to ensure your design is efficient, durable and aesthetically exceptional",
       items: [],
     },
   ]
@@ -65,7 +65,7 @@ export default function ProductsServicesPage() {
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-sans">Our Products & Services</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Comprehensive architectural solutions from concept to completion, delivering excellence in facade
-            engineering, glass processing, and building envelope systems.
+            engineering, glass processing and building envelope systems.
           </p>
         </div>
       </section>
@@ -133,7 +133,7 @@ export default function ProductsServicesPage() {
               Get Consultation
             </Link>
             <Link
-              href="/projects"
+              href="/projects/residential/completed"
               className="px-8 py-3 border border-border text-foreground rounded-lg font-medium hover:bg-muted transition-colors inline-block"
             >
               View Our Projects

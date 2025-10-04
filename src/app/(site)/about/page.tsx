@@ -1,6 +1,7 @@
 import {Card, CardContent} from "@/components/ui/card"
 import {Button} from "@/components/ui/button"
 import {ArrowRight, Award, Building2, Calendar, Users} from "lucide-react"
+import MakeLink from "@components/makeLink"
 
 export default function AboutPage() {
   const milestones = [
@@ -20,13 +21,13 @@ export default function AboutPage() {
       year: "2018",
       title: "RM Consortium Limited (RMC)",
       description:
-        "Focused exclusively on complex facade projects including curtain walls, aluminum doors and windows, and ACP cladding solutions.",
+        "Focused exclusively on complex facade projects including curtain walls, aluminum doors and windows and ACP cladding solutions.",
     },
     {
       year: "2021",
       title: "Dhaka Tempered Glass",
       description:
-        "Launched our state-of-the-art glass processing facility offering DGU, tempering, lamination, and bending services.",
+        "Launched our state-of-the-art glass processing facility offering DGU, tempering, lamination and bending services.",
     },
   ]
 
@@ -39,12 +40,12 @@ export default function AboutPage() {
     {
       icon: Award,
       title: "Unmatched Precision",
-      description: "Delivering with precision, durability, and aesthetic value that exceeds expectations.",
+      description: "Delivering with precision, durability and aesthetic value that exceeds expectations.",
     },
     {
       icon: Users,
       title: "Trusted Partnership",
-      description: "Earning trust of leading architects, contractors, and clients across Bangladesh.",
+      description: "Earning trust of leading architects, contractors and clients across Bangladesh.",
     },
   ]
 
@@ -60,7 +61,7 @@ export default function AboutPage() {
                 Pioneering Architectural Excellence <span className="text-primary">Since 2008</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                We deliver world-class facade, glass, and cladding solutions — all under one roof.
+                We deliver world-class facade, glass and cladding solutions — all under one roof.
               </p>
             </div>
 
@@ -92,7 +93,7 @@ export default function AboutPage() {
             <div className="text-center space-y-4">
               <h2 className="font-space-grotesk font-bold text-3xl lg:text-4xl text-foreground">Our Story</h2>
               <p className="text-lg text-muted-foreground">
-                A journey of strategic evolution, driven by unwavering commitment to quality, innovation, and integrated
+                A journey of strategic evolution, driven by unwavering commitment to quality, innovation and integrated
                 architectural solutions.
               </p>
             </div>
@@ -101,7 +102,7 @@ export default function AboutPage() {
               <p className="text-lg leading-relaxed">
                 At RM Consortium Limited (RMC), we don&apos;t just build facades — we craft iconic structures that inspire
                 confidence and stand the test of time. Our story is one of strategic evolution, driven by an unwavering
-                commitment to quality, innovation, and the ambition to provide truly integrated architectural solutions
+                commitment to quality, innovation and the ambition to provide truly integrated architectural solutions
                 in Bangladesh.
               </p>
             </div>
@@ -150,7 +151,7 @@ export default function AboutPage() {
             <h2 className="font-space-grotesk font-bold text-3xl lg:text-4xl text-foreground">What Sets Us Apart</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Today, RM Consortium Limited is more than a service provider. We are a powerhouse of expertise,
-              technology, and craftsmanship.
+              technology and craftsmanship.
             </p>
           </div>
 
@@ -176,10 +177,10 @@ export default function AboutPage() {
               <p className="text-lg text-muted-foreground mb-6">
                 From concept to completion, we offer comprehensive solutions from a single, trusted source.
               </p>
-              <Button size="lg" className="group">
+              <MakeLink href="/contact">
                 Start Your Project
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </MakeLink>
             </div>
           </div>
         </div>

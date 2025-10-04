@@ -11,10 +11,10 @@ export function Footer() {
               <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
                 <Building2 className="h-5 w-5 text-primary-foreground" />
               </div>
-              <span className="font-space-grotesk font-bold text-xl">RM Consortium</span>
+              <span className="font-space-grotesk font-bold text-xl">RM Consortium Ltd</span>
             </div>
             <p className="text-sm text-background/80">
-              Leading architectural firm specializing in facade, glass, and cladding solutions since 2008.
+              Leading architectural firm specializing in facade, glass and cladding solutions since 2008.
             </p>
           </div>
 
@@ -70,7 +70,8 @@ export function Footer() {
             <div className="space-y-2 text-sm text-background/80">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+880 1234 567890</span>
+                <span>+880 1711 313592</span>
+                <span>+880 1747 256525</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />

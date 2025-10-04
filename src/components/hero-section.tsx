@@ -1,8 +1,10 @@
 import {Button} from "@/components/ui/button"
 import {ArrowRight, Award, Building2, Shield} from "lucide-react"
 import Image from "next/image";
+import MakeLink from "./makeLink";
 
 export function HeroSection() {
+
   return (
     <section className="relative bg-gradient-to-br from-background to-muted py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,18 +17,18 @@ export function HeroSection() {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Since 2008, RM Consortium Limited has been Bangladesh
                   &apos;s premier architectural firm, specializing in
-                innovative facade, glass, and cladding solutions for commercial projects.
+                innovative facade, glass and cladding solutions for commercial projects.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="group">
+              <MakeLink href="/projects/residential/completed">
                 View Our Projects
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg">
+              </MakeLink>
+              <MakeLink variant="outline" href="/contact">
                 Get Consultation
-              </Button>
+              </MakeLink>
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8">

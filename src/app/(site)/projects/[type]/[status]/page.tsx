@@ -8,30 +8,8 @@ import {useParams} from "next/navigation";
 import {useCustom} from "@refinedev/core";
 import Projects from "@app/(site)/projects/[type]/[status]/projects";
 
-interface Project {
-    id: string
-    title: string
-    description: string
-    location: string
-    date: string
-    image: string
-}
-
 export default function CommercialCompletedPage() {
     const {type, status} = useParams();
-
-
-  // const projects = [
-  //   {
-  //     id: 1,
-  //     title: "Financial District Tower - Gulshan",
-  //     description:
-  //       "Iconic 30-story commercial tower with award-winning curtain wall design and sustainable glass solutions.",
-  //     location: "Gulshan, Dhaka",
-  //     date: "November 2023",
-  //     image: "/financial-tower-gulshan.png",
-  //   }
-  // ]
 
   return (
     <main className="min-h-screen">
@@ -54,14 +32,6 @@ export default function CommercialCompletedPage() {
               <div className="flex items-center gap-2">
                 <Building className="h-4 w-4" />
                 <span>5 Completed Projects</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Users className="h-4 w-4" />
-                <span>845,000 sq ft Total</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Award className="h-4 w-4" />
-                <span>12 Awards Won</span>
               </div>
             </div>
           </div>
