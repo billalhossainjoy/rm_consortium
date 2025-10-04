@@ -10,6 +10,6 @@ export const ApiClient = axios.create({
     }
 })
 
-const API_URL = "http://localhost:3000/api";
+const API_URL = "/api";
 
 export const dataProvider = dataProviderSimpleRest(API_URL);
