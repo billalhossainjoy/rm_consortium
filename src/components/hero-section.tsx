@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import MakeLink from "./makeLink";
+import MakeLinkOutline from "./makeLinkOutline";
 
 const slides = [
     {
@@ -62,9 +63,9 @@ export function HeroSection() {
                                     View Our Projects
                                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                                 </MakeLink>
-                                <MakeLink variant="outline" href="/contact">
+                                <MakeLinkOutline href="/contact">
                                     Get Consultation
-                                </MakeLink>
+                                </MakeLinkOutline>
                             </div>
 
                             <div className="grid grid-cols-3 gap-8 pt-8">
