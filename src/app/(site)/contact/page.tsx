@@ -56,11 +56,10 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-semibold text-slate-900 mb-2">Office Address</h3>
                         <p className="text-slate-600">
-                          House # 123, Road # 45
+                          100 Feet Road, Madani Avenue, Notun Bazar,
                           <br />
-                          Gulshan-2, Dhaka-1212
+                          Vatara, Dhaka-1212, Bangladesh.
                           <br />
-                          Bangladesh
                         </p>
                       </div>
                     </div>
@@ -76,11 +75,9 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-semibold text-slate-900 mb-2">Phone Numbers</h3>
                         <p className="text-slate-600">
-                          Office: +880 2-9876543
+                          Office: +880 1711 313592
                           <br />
-                          Mobile: +880 1712-345678
-                          <br />
-                          Emergency: +880 1812-345678
+                          Office: +880 1747 256525
                         </p>
                       </div>
                     </div>
@@ -96,11 +93,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-semibold text-slate-900 mb-2">Email Addresses</h3>
                         <p className="text-slate-600">
-                          General: info@rmconsortium.com
-                          <br />
-                          Projects: projects@rmconsortium.com
-                          <br />
-                          Support: support@rmconsortium.com
+                          General: info@rmconsortium.com.bd
                         </p>
                       </div>
                     </div>
