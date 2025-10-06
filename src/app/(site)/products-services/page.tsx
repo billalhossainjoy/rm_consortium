@@ -2,6 +2,8 @@ import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/compo
 import {Badge} from "@/components/ui/badge"
 import {Building2, Home, Layers, Microscope, Users, Wrench} from "lucide-react"
 import Link from "next/link"
+import ServiceImage from "@components/service-images"
+import CasmentImage from "@components/casment-images"
 
 export default function ProductsServicesPage() {
   const services = [
@@ -115,8 +117,23 @@ export default function ProductsServicesPage() {
         </div>
       </section>
 
+      <section className="py-20 px-4 bg-muted/50">
+         <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-sans">
+            Aluminum glass Door & window --- siliding door & wind
+          </h2>
+        </div>
+          <ServiceImage />
+          <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-sans">
+            Casment
+          </h2>
+        </div>
+          <CasmentImage />
+      </section>
+
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-sans">
             Ready to Transform Your Project?
