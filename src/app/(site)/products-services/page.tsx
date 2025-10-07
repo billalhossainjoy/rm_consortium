@@ -5,60 +5,12 @@ import Link from "next/link"
 import ServiceImage from "@components/service-images"
 import CasmentImage from "@components/casment-images"
 import Collapse from "@components/collapse"
+import useServicesHook from "./services"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@*/components/ui/dialog"
+import PreviewImages from "@components/preview-images"
 
 export default function ProductsServicesPage() {
-  const services = [
-    {
-      icon: <Home className="h-8 w-8" />,
-      title: "Aluminum Glass Doors & Windows",
-      description: "High-performance systems (Thermal & Non-Thermal Break) using both imported and local profiles",
-      items: [
-        "Sliding Door & Window",
-        "Casement Window",
-        "Tilt & Turn",
-        "Swing Door",
-        "Lift & Slide",
-        "Bi-fold Door",
-        "Automatic Sensor Sliding Door",
-      ],
-    },
-    {
-      icon: <Building2 className="h-8 w-8" />,
-      title: "facade Works",
-      description: "Engineering sophisticated building envelopes with precision",
-      items: [
-        "Curtain Wall Systems (Stick, Semi-Unitized, Unitized)",
-        "Spider Glazing (Point Fixing)",
-        "Skylights",
-        "Louvers: Box, Z, Glass, Hydrofoil, Aerofoil & Customized",
-      ],
-    },
-    {
-      icon: <Layers className="h-8 w-8" />,
-      title: "Cladding Solutions",
-      description: "Transforming exteriors with premium materials",
-      items: ["ACP (Aluminum Composite Panel) Cladding", "Zinc Cladding", "Stone Cladding", "Perforated Cladding"],
-    },
-    {
-      icon: <Wrench className="h-8 w-8" />,
-      title: "Interior & Architectural Glass",
-      description: "Enhancing spaces with precision-crafted glasswork",
-      items: ["Glass Partitions", "Shower Enclosures"],
-    },
-    {
-      icon: <Microscope className="h-8 w-8" />,
-      title: "Advanced Glass Processing",
-      description: "Delivering specialized products through our in-house facility (Dhaka Tempered Glass)",
-      items: ["Double Glazing Units (DGU)", "Tempered Glass", "Laminated Glass", "Bent Glass"],
-    },
-    {
-      icon: <Users className="h-8 w-8" />,
-      title: "facade Engineering & Consultancy",
-      description:
-        "Providing expert guidance to ensure your design is efficient, durable and aesthetically exceptional",
-      items: [],
-    },
-  ]
+  const services = useServicesHook()
 
   return (
     <main className="min-h-screen">
@@ -103,10 +55,21 @@ export default function ProductsServicesPage() {
                       {service.items.map((item, itemIndex) => (
                         <Badge
                           key={itemIndex}
-                          variant="secondary"
-                          className="text-xs px-3 py-1 bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                          variant="outline"
+                          className="text-xs px-3 py-1 bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors cursor-pointer"
                         >
-                          {item}
+
+                              <Dialog>
+  <DialogTrigger>{item.name}</DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+      <DialogTitle>{item.name}</DialogTitle>
+      <DialogDescription>
+        <PreviewImages images={item.images} />
+      </DialogDescription>
+    </DialogHeader>
+  </DialogContent>
+</Dialog>
                         </Badge>
                       ))}
                     </div>
@@ -118,7 +81,7 @@ export default function ProductsServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-muted/50">
+      {/* <section className="py-20 px-4 bg-muted/50">
         <div className="container mx-auto max-w-4xl text-center">
         </div>
         <Collapse title="Aluminum glass Door & window --- siliding door & wind">
@@ -129,10 +92,10 @@ export default function ProductsServicesPage() {
         <Collapse title="Casment">
           <CasmentImage />
         </Collapse>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-background">
+      <section className="py-20 px-4 bg-muted/40">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-sans">
             Ready to Transform Your Project?
@@ -156,6 +119,8 @@ export default function ProductsServicesPage() {
             </Link>
           </div>
         </div>
+        
+          
       </section>
     </main>
   )

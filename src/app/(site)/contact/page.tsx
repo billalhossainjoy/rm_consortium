@@ -56,7 +56,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-semibold text-slate-900 mb-2">Office Address</h3>
                         <p className="text-slate-600">
-                          100 Feet Road, Madani Avenue, Notun Bazar,
+                          100 Feet Road,57 Madani Avenue, Notun Bazar,
                           <br />
                           Vatara, Dhaka-1212, Bangladesh.
                           <br />

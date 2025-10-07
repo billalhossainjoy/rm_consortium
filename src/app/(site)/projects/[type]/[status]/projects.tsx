@@ -28,7 +28,7 @@ const Projects = () => {
     console.log(projects)
 
     if(isLoading) {
-        return <span className="h-screen w-full flex justify-center items-enter"><Loader2 /></span>;
+        return <span className="h-screen w-full flex justify-center items-enter p-40"><Loader2 className='animate-spin'/></span>;
     }
 
     if(!projects || projects.length == 0)
