@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@components/ui/card";
 import {Badge} from "@components/ui/badge";
-import {Calendar, MapPin} from "lucide-react";
+import {Calendar, Loader2, MapPin} from "lucide-react";
 import {useParams} from "next/navigation";
 import {useCustom} from "@refinedev/core";
 import Image from "next/image";

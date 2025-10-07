@@ -5,6 +5,7 @@ import AddProject from "@components/addProject";
 import {useParams} from "next/navigation";
 import {useCustom} from "@refinedev/core";
 import {UpdateProjectInput} from "@validation/schema";
+import { Loader2 } from 'lucide-react';
 
 
 const Page = () => {
