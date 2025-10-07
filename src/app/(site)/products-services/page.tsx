@@ -1,9 +1,10 @@
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
-import {Badge} from "@/components/ui/badge"
-import {Building2, Home, Layers, Microscope, Users, Wrench} from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Building2, Home, Layers, Microscope, Users, Wrench } from "lucide-react"
 import Link from "next/link"
 import ServiceImage from "@components/service-images"
 import CasmentImage from "@components/casment-images"
+import Collapse from "@components/collapse"
 
 export default function ProductsServicesPage() {
   const services = [
@@ -118,18 +119,16 @@ export default function ProductsServicesPage() {
       </section>
 
       <section className="py-20 px-4 bg-muted/50">
-         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-sans">
-            Aluminum glass Door & window --- siliding door & wind
-          </h2>
+        <div className="container mx-auto max-w-4xl text-center">
         </div>
+        <Collapse title="Aluminum glass Door & window --- siliding door & wind">
           <ServiceImage />
-          <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-sans">
-            Casment
-          </h2>
+        </Collapse>
+        <div className="container mx-auto max-w-4xl text-center">
         </div>
+        <Collapse title="Casment">
           <CasmentImage />
+        </Collapse>
       </section>
 
       {/* CTA Section */}

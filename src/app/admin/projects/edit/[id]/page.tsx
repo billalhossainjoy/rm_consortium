@@ -18,7 +18,7 @@ const Page = () => {
     console.log(data)
 
     if(isLoading) {
-        return <div>Loading...</div>
+        return <span className="h-screen w-full flex justify-center items-enter"><Loader2 /></span>;
     }
 
     if(!data){

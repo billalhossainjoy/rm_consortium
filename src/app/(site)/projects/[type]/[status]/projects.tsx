@@ -28,7 +28,7 @@ const Projects = () => {
     console.log(projects)
 
     if(isLoading) {
-        return <div className={"flex justify-center text-gray-500 p-10"}>Loading...</div>
+        return <span className="h-screen w-full flex justify-center items-enter"><Loader2 /></span>;
     }
 
     if(!projects || projects.length == 0)

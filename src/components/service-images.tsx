@@ -9,7 +9,6 @@ import image5 from "../assets/services/image5.jpg"
 import image6 from "../assets/services/image6.jpg"
 import image7 from "../assets/services/image7.jpg"
 import image8 from "../assets/services/image8.jpg"
-import image9 from "../assets/services/image9.jpg"
 import Image from "next/image";
 
 

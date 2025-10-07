@@ -10,6 +10,7 @@ import routerProvider from "@refinedev/nextjs-router";
 
 import { dataProvider } from "@providers/data-provider";
 import "@styles/global.css";
+import { Loader2 } from "lucide-react";
 
 type RefineContextProps = {};
 
@@ -30,7 +31,7 @@ const App = (props: React.PropsWithChildren<AppProps>) => {
   const to = usePathname();
 
   if (status === "loading") {
-    return <span>loading...</span>;
+    return <span className="h-screen w-full flex justify-center items-enter"><Loader2 /></span>;
   }
 
   const authProvider: AuthProvider = {
