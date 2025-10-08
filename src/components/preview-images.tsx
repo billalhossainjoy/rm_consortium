@@ -1,11 +1,11 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 
-export default function  PreviewImages(arr: never[]) {
-    return <div className={"flex gap-3 container mx-auto flex-wrap p-5 "}>
+export default function PreviewImages({images}: {images: (string | StaticImageData)[]}) {
+    return <div className={"grid grid-cols-2 gap-2 p-2 rounded-lg overflow-y-auto max-h-[70vh]"}>
         {
-            arr.map((image, i) => {
-                return <Image key={i} src={image} alt={image} className={"max-w-80 w-full h-80 rounded-lg border-lg border-black bg-white overflow-hidden"} />
+            images.map((image, i) => {
+                return <Image key={i} src={image} alt={"images"} className={"w-full h-full rounded-lg border-lg border-black bg-white overflow-hidden"} />
             })
         }
         </div>

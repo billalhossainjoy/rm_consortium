@@ -2,11 +2,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Building2, Home, Layers, Microscope, Users, Wrench } from "lucide-react"
 import Link from "next/link"
-import ServiceImage from "@components/service-images"
-import CasmentImage from "@components/casment-images"
-import Collapse from "@components/collapse"
 import useServicesHook from "./services"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@*/components/ui/dialog"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@*/components/ui/dialog"
 import PreviewImages from "@components/preview-images"
 
 export default function ProductsServicesPage() {
@@ -60,13 +57,13 @@ export default function ProductsServicesPage() {
                         >
 
                               <Dialog>
-  <DialogTrigger>{item.name}</DialogTrigger>
+  <DialogTrigger className="cursor-pointer">{item.name}</DialogTrigger>
   <DialogContent>
     <DialogHeader>
       <DialogTitle>{item.name}</DialogTitle>
-      <DialogDescription>
-        <PreviewImages images={item.images} />
-      </DialogDescription>
+      <DialogContent className="overflow-y-auto max-h-[70vh]">
+        <PreviewImages images={item.images}  />
+      </DialogContent>
     </DialogHeader>
   </DialogContent>
 </Dialog>
