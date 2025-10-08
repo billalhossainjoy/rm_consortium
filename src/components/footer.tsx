@@ -79,7 +79,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>100 Feet Road, Madani Avenue, Notun Bazar, Vatara, Dhaka-1212, Bangladesh.</span>
+                <span>100 Feet Road, 57 Madani Avenue, Notun Bazar, Vatara, Dhaka-1212, Bangladesh.</span>
               </div>
             </div>
           </div>
