@@ -36,7 +36,7 @@ import image35 from "../../../assets/images/image35.jpg"
 import image36 from "../../../assets/images/image36.jpg"
 
 
-export const images = ["",
+export const images = [image22,
     image1,
     image2, image3, image4, 
     image5, image6, image7, 
