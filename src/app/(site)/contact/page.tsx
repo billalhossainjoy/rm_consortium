@@ -77,7 +77,7 @@ export default function ContactPage() {
                         <p className="text-slate-600">
                           Office: +880 1711 313592
                           <br />
-                          Office: +880 1747 256525
+                          Office: +880 1749 256255
                         </p>
                       </div>
                     </div>
