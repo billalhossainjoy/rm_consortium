@@ -3,7 +3,7 @@
 import React from 'react';
 import {Button} from "@components/ui/button";
 import Link from "next/link";
-import {PlusIcon} from "lucide-react";
+import {Loader2, PlusIcon} from "lucide-react";
 import {useList} from "@refinedev/core";
 import {Card, CardAction, CardContent, CardFooter, CardHeader, CardTitle} from "@components/ui/card";
 import DeleteActions from "@app/admin/projects/DeleteActions";
