@@ -20,8 +20,12 @@ interface Project {
 }
 
 const Page = () => {
-    const {result: {data}} = useList<Project>()
+    const {result: {data}, query: {isLoading}} = useList<Project>()
     const router = useRouter()
+
+    if(isLoading) {
+        return <span className="h-screen w-full flex justify-center items-enter p-40"><Loader2 className='animate-spin'/></span>;
+    }
 
     return (
         <div className={"p-3"}>

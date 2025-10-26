@@ -36,7 +36,7 @@ export const Menu = () => {
                     )
                 })}
             </ul>
-            <button className={"cursor-pointer w-full relative bottom-0 mb-12 p-5 bg-primary"} onClick={() => logout()}>Logout</button>
+            <button className={"cursor-pointer w-full relative bottom-0 mb-15 p-5 bg-primary"} onClick={() => logout()}>Logout</button>
         </div>
 
     </nav>
