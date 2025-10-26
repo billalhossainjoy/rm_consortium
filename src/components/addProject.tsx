@@ -231,7 +231,14 @@ const AddProject = ({data}: { data?: UpdateProjectInput }) => {
 
 
 
-                   <div className={"w-full"}>
+                  
+
+
+
+
+
+               </form> 
+               <div className={"w-full"}>
                        <CldUploadWidget
                            uploadPreset="uploads"
                            options={{
@@ -247,16 +254,11 @@ const AddProject = ({data}: { data?: UpdateProjectInput }) => {
                            }}
                        </CldUploadWidget>
                    </div>
-
-
-
-                   <Button>
+                    <Button onClick={() => {form.handleSubmit(onSubmit)()}}>
                        {
                            !data ? "Add project" : "Update project"
                        }
                    </Button>
-
-               </form>
             </Form>
         </div>
     );
