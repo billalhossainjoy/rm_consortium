@@ -24,7 +24,6 @@ export async function GET(_: Request, {params}: Options){
     })
 
     return Response.json(data)
-
 }
 
 
